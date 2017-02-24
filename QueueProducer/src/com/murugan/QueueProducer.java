@@ -19,6 +19,7 @@ import javax.naming.NamingException;
 public class QueueProducer {
 
 	public static void main(String[] args) throws NamingException, JMSException, IOException {
+		System.out.println("TESTING after installing GIT");
 		System.out.println("Starting QueueProducer to send message");
 		Context initialContext = QueueProducer.getInitialContext();
 		QueueConnectionFactory conFactory = (QueueConnectionFactory) initialContext.lookup("java:comp/DefaultJMSConnectionFactory");
